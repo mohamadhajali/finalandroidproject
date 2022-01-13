@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckIn"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Praice per Day"
+            style="@style/edtStyle"
+            ></TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            style="@style/edtStyle"
+            android:id="@+id/roomPriceByDay"
+
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="RoomID"
+            style="@style/edtStyle"
+            ></TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            style="@style/edtStyle"
+            android:id="@+id/roomId"
+
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="capacity"
+            style="@style/edtStyle"
+            ></TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            style="@style/edtStyle"
+            android:id="@+id/roomCapacity"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="check in date"
+            style="@style/edtStyle"
+            ></TextView>
+        <EditText
+            android:id="@+id/checkindate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:inputType="date"
+            style="@style/edtStyle"
+            android:shadowColor="@color/purple_700"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+
+        >
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="check out date"
+        style="@style/edtStyle"
+        ></TextView>
+    <EditText
+        android:id="@+id/chekoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:inputType="date"
+        style="@style/edtStyle"
+        android:shadowColor="@color/purple_700"
+        />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/btnStyle"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="Check In">
+
+    </Button>
+
+</LinearLayout>
